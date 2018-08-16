@@ -14,6 +14,8 @@ class Main
       puts 'Enter git command'.colorize(:green)
       Git.puts_git(gets.strip)
     when 2
+      Git.config
+    when 3
       exit
     else
       puts 'Invalid choice'.colorize(:red)
